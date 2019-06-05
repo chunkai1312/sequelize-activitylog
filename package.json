@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A sequelize plugin for logging activities",
   "scripts": {
+    "pretest": "npx sequelize db:migrate",
     "test": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint": "eslint lib test"
@@ -44,6 +45,7 @@
     "mocha": "^5.2.0",
     "nyc": "^13.0.1",
     "pg": "^7.11.0",
-    "sequelize": "^5.0.0"
+    "sequelize": "^5.0.0",
+    "sequelize-cli": "^5.4.0"
   }
 }

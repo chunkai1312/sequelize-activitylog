@@ -24,7 +24,7 @@ describe('sequelize-activitylog', () => {
   })
 
   after(() => {
-    sequelize.close()
+    return sequelize.close()
   })
 
   beforeEach(async () => {
