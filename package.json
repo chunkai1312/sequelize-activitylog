@@ -1,6 +1,6 @@
 {
   "name": "sequelize-activitylog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A sequelize plugin for logging activities",
   "scripts": {
     "pretest": "npx sequelize db:migrate",
