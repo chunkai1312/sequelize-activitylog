@@ -1,0 +1,49 @@
+{
+  "name": "sequelize-activitylog",
+  "version": "0.1.0",
+  "description": "A sequelize plugin for logging activities",
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "eslint lib test"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunkai1312/sequelize-activitylog.git"
+  },
+  "keywords": [
+    "sequelize-activitylog",
+    "sequelize",
+    "activity",
+    "activities",
+    "activitylog",
+    "plugin"
+  ],
+  "author": "Chun-Kai Wang <chunkai1312@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chunkai1312/sequelize-activitylog/issues"
+  },
+  "homepage": "https://github.com/chunkai1312/sequelize-activitylog#readme",
+  "peerDependencies": {
+    "sequelize": ">=5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codecov": "^3.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "pg": "^7.11.0",
+    "sequelize": "^5.0.0"
+  }
+}
